@@ -1,0 +1,23 @@
+= '\n'
+//= first-screen =
+
+.first-screen
+    - dark = true
+    .first-screen__logo.container
+        include _logo
+    .first-screen__image  
+        img(src="images/first-banner.jpg", alt="")
+    .first-screen__content
+        .first-screen__title
+            h1 TIME TO <br> 
+                span.color SHINE BRIGHTER
+        +icon('icon-play')
+    .first-screen__scroll 
+        .chevron
+        .chevron 
+        .chevron
+        span.first-screen__scroll-text Scroll to reveal
+-
+   dark = false
+//= End first-screen =
+= '\n'

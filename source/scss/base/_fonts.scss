@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Yantramanav';
+    src: url('../fonts/yantramanav-regular.woff') format('woff'), 
+    url('../fonts/yantramanav-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yantramanav';
+    src: url('../fonts/yantramanav-bold.woff') format('woff'),
+    url('../fonts/yantramanav-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yantramanav';
+    src: url('../fonts/yantramanav-black.woff') format('woff'),
+    url('../fonts/yantramanav-black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

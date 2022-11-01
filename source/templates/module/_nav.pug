@@ -1,0 +1,11 @@
+= '\n'
+//= nav =
+
+nav.nav
+    ul.nav__inner
+        each item, i in menuList
+            li.nav__item
+                a.nav__link(href="#" class=i==0?'active':'')= item
+        
+//= End nav =
+= '\n'

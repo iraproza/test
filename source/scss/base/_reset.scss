@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+// Body reset
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    font-family: $fontFamilyBase;
+    color: $textColor;
+    background-color: $bodyBg;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none;
+}
+
+// Links
+a {
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+    outline: none;
+    color: $linkColor;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+// Images
+img {
+    max-width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}

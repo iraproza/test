@@ -1,0 +1,21 @@
+.header {
+    // position: fixed;
+    background: $brand01;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: all 0.35s ease;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 50px;
+        position: relative;
+        z-index: 5;
+    }
+}

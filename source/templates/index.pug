@@ -1,0 +1,37 @@
+//- Utility
+
+include utils/_variable
+
+-
+    pageTitle = 'main'
+    main = true
+
+doctype html
+html
+    include layout/_head
+
+    body
+
+        = '\n'
+        //= Layout =
+
+        #layout.layout
+            include module/_first-screen
+            include layout/_header 
+              
+            include module/_banner
+
+            = '\n'
+            //= Main =
+
+            main#main 
+                include module/_quote                   
+
+            //= End main =
+            = '\n'
+
+        //= End layout =
+        = '\n'
+
+        include layout/_sprite
+        include layout/_scripts

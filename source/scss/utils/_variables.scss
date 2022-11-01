@@ -1,0 +1,47 @@
+//== Colors
+
+$base:                  #fff !default;
+$grayBase:              #000 !default;
+
+$brand01:               #001524 !default;
+$brand04:               #FDC200 !default;
+$brand02:               #133D60 !default;
+$brandGreen:            #80BA27 !default;
+$brandRed:              #DF1921 !default;
+
+//== Reset
+
+$bodyBg:                $base !default;
+$textColor:             $brand01 !default;
+$linkColor:             $brand01 !default;
+
+//== Typography
+
+$fontFamilyBase:        'Yantramanav', sans-serif !default;
+
+$fontSizeSmall:         0.9375vw !default;
+$fontSizeBase:          1.3021vw !default;
+$fontSizeLarge:         1.8229vw !default;
+
+$fontSize150:           7.8125vw !default;
+$fontSize60:            3.1250vw !default;
+$fontSize28:            1.4583vw!default;
+
+$lineHeightSmall:       1.3021vw !default;
+$lineHeightBase:        1.8229vw !default;
+$lineHeightLarge:       2.0313vw !default;
+$lineHeight122:         6.3542vw !default;
+
+//== Container template
+
+$container:                  81.2500vw !default;
+$containerGutterWidth:       1.5625vw !default;
+
+
+//== Media queries breakpoints
+
+$screen_min_360:        360px !default;
+$screen_min_375:        375px !default;
+$screen_min_768:        768px !default;
+$screen_min_1080:       1080px !default;
+$screen_min_1920:       1920px !default;

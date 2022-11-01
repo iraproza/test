@@ -1,0 +1,16 @@
+.logo {
+    font-weight: 700;
+    font-size: $fontSizeLarge;
+    line-height: 1;
+    position: relative;
+    z-index: 3;
+    width: 20.8333vw;
+    
+    &.white {
+        color: $base;
+    }
+
+    &.dark {
+        color: $brand01;
+    }
+}

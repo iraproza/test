@@ -1,0 +1,76 @@
+body {
+    font-size: $fontSizeSmall;
+    line-height: $lineHeightBase;
+    margin: 0;
+    
+    h1, h2, h3, h4 {
+        .color {
+            color: $brand04;
+        }
+    }
+
+    .layout {
+        position: relative;
+        min-width: 320px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        padding: 0 0 32px 0;
+    }
+
+    .container {
+        max-width: $container;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: $containerGutterWidth / 2;
+        padding-left: $containerGutterWidth / 2;
+    }
+
+    main {
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (min-width: $screen_min_768) {
+        h1 {
+            font-size: $fontSizeLarge;
+            line-height: 32px;
+        }
+
+        h2 {
+            font-size: $fontSizeBase;
+            line-height: 29px;
+        }
+
+        h3 {
+            font-size: $fontSizeSmall;
+            line-height: 27px;
+        }
+
+        h4 {
+            font-size: $fontSizeSmall;
+            line-height: 24px;
+        }
+    }
+
+    @media (min-width: $screen_min_1080) {
+        font-size: $fontSizeBase;
+
+        .layout {
+            padding-top: 0;
+            padding-bottom: 56px;
+        }
+
+        h1 {
+            font-size: $fontSize150;
+            line-height: $lineHeight122;
+        }
+
+        h2 {
+            font-size: $fontSizeLarge;
+            line-height: 32px;
+        }
+    }
+}
