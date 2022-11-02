@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    transition: all 1s;
 
     &__title {
         max-width: $container;
@@ -15,6 +16,8 @@
         h1 {
             margin: 0;
             text-align: center;
+            font-size: $fontSize150;
+            line-height: $lineHeight122;
         }
 
         span {
@@ -26,9 +29,18 @@
         position: absolute;
         bottom: 0;
         right: 4.8958vw;
+        z-index: 1;
+    }
 
-        img {
-            width: 29.3229vw;
-        }
+    &__image-hand {
+        width: 29.3229vw;
+    }
+
+    &__image-star {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        transform: rotate(-8deg);
+        width: 18vw;
     }
 }

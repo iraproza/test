@@ -1,0 +1,14 @@
+= '\n'
+//= benefits =
+
+section.benefits 
+    .benefits__container.container
+        each item, i in benefits
+            .benefits__item(data-aos="fade-up")
+                .benefits__item-icon
+                    img(src=`images/icons/${item.icon}.svg`, alt="")
+                h3.benefits__item-title= item.title 
+                p.benefits__item-info= item.info
+
+//= End benefits =
+= '\n'

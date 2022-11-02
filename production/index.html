@@ -10,6 +10,7 @@
         <meta property="og:description" content="">
         <meta property="og:image" content="">
         <title>Project | main</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body>
@@ -53,14 +54,11 @@
                 <div class="banner__title">
                     <h1>TIME TO <br> <span>SHINE BRIGHTER</span></h1>
                 </div>
-                <div class="banner__image"> <img src="images/second-banner.png" alt=""></div>
+                <div class="banner__image"> <img class="banner__image-hand" src="images/hand.png" alt=""><img class="banner__image-star" src="images/star.png" alt=""></div>
             </div>
             <main id="main">
                 <section class="quote">
                     <div class="container">
-                        <div class="quote__icon"> <svg class="icon-star">
-                                <use xlink:href="#icon-star"></use>
-                            </svg></div>
                         <div class="quote__author">
                             <div class="quote__author-photo"><img src="images/photo.png" alt=""></div>
                             <h3>Dan Hoffmann</h3><span>Managing Director</span><span>Executive Vice President</span><span>Intra-Asia Trades</span>
@@ -70,7 +68,28 @@
                             <blockquote>
                                 <p>In the last few years we sensed the wind of change in our company. We were responding more quickly and successfully to the needs of our clients. And now, we feel that we are ready for that change to be seen. So, we took our visual communication assets and gave them the appropriate upgrade they deserved. </p>
                                 <p>While the ease of doing business with us was so noticable, we felt that the way we look and sound projected something else, something that it is not us. We decided to change that as well, in order to be unified in every front. I welcome you to see what we’ve done and will be happy to hear your thoughts on it.</p>
-                            </blockquote>
+                            </blockquote><a class="quote__link" href="#"> <span>Watch Mr. Hoffmann's statement</span><svg class="icon-play">
+                                    <use xlink:href="#icon-play"></use>
+                                </svg></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="benefits">
+                    <div class="benefits__container container">
+                        <div class="benefits__item" data-aos="fade-up">
+                            <div class="benefits__item-icon"><img src="images/icons/icon-1.svg" alt=""></div>
+                            <h3 class="benefits__item-title">survey</h3>
+                            <p class="benefits__item-info">We interviewed every one that counts at Gold Star Line - employees and managers, held a vast questionnaire with our clients, examined the other companies in our field, and gathered a lot of useful data.</p>
+                        </div>
+                        <div class="benefits__item" data-aos="fade-up">
+                            <div class="benefits__item-icon"><img src="images/icons/icon-2.svg" alt=""></div>
+                            <h3 class="benefits__item-title">Research</h3>
+                            <p class="benefits__item-info">All the data that has been obtained was Taken into account in the analysis process. We've learned a great deal from all that great data and had some interesting insights, regarding our mission.</p>
+                        </div>
+                        <div class="benefits__item" data-aos="fade-up">
+                            <div class="benefits__item-icon"><img src="images/icons/icon-3.svg" alt=""></div>
+                            <h3 class="benefits__item-title">Strategy</h3>
+                            <p class="benefits__item-info">With all of that information, we could finally formulate the right strategy that will serve Gold Star Line faithfully, for many years to come. The results are right here, hope you’ll find it as inspiring as we did.</p>
                         </div>
                     </div>
                 </section>
@@ -86,7 +105,10 @@
                 </symbol>
             </defs>
         </svg>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
         <script src="../vendor/jquery/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/main.min.js"></script>
     </body>
 </html>
