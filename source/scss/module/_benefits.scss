@@ -3,8 +3,7 @@
 
     &__container {
         display: grid;
-        grid-template-columns: 20.7292vw 20.7292vw;
-        grid-gap: 53px 85px;
+        grid-gap:20px 0;
         align-items: center;
         justify-content: center;
         position: relative;
@@ -12,7 +11,7 @@
     }
 
     &__item {
-        width: 20.7292vw;
+        width: 75vw;
         background-color: $base;
         border-radius: 1.6667vw;
         display: flex;
@@ -29,19 +28,62 @@
             transition-duration: .2s !important;
         }
 
-        &:nth-child(2n) {
-            top: 250px;
-        }
-
         &-icon {
             margin-bottom: 1.8750vw;
+            height: 6.7708vw;
+            
+            img {
+                object-fit: contain;
+                width: auto;
+                height: 100%;
+            }
         }
 
         &-title {
             margin: 0 0 2.8125vw 0;
-            font-size: $fontSizeLarge;
-            line-height: $lineHeightLarge;
+            font-size: 5.4667vw;
+            line-height: 6vw;
             color: $brand02;
         }
+
+        p{
+            font-size: 4.4103vw;
+            line-height: 5.4103vw;
+        }
+    }
+
+    @media (min-width: $screen_min_768) {
+
+        &__item {
+            width: 45vw;
+
+            &-title {
+                font-size: $fontSizeLarge;
+                line-height: $lineHeightLarge;
+            }
+
+            p {
+                font-size: $fontSizeBase;
+                line-height: $lineHeightBase;
+            }
+        }
+    }
+
+    @media (min-width: $screen_min_1080) {
+
+        &__container {
+            grid-template-columns: 20.7292vw 20.7292vw;
+            grid-gap: 53px 85px;
+        }
+
+        &__item {
+            width: auto;
+
+            &:nth-child(2n) {
+                top: 250px;
+            }
+        }
+
+        
     }
 }

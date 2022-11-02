@@ -30,8 +30,8 @@
     &__link {
         position: relative;
         display: inline-block;
-        line-height: $lineHeightBase;
-        font-size: $fontSizeSmall;
+        line-height: 7vw;
+        font-size: 5.0000vw;
         font-weight: 400;
         color: $base;
         padding: 0.5208vw;
@@ -61,7 +61,7 @@
  
     @media (min-width: $screen_min_768) {
         position: relative;
-        top: -2px;
+        top: 0;
         width: auto;
         height: auto;
         padding: 0;
@@ -77,6 +77,9 @@
 
         &__link {
             padding: 1.4063vw 0.5208vw 1.3542vw 0.5208vw;
+            font-size: $fontSizeSmall;
+            line-height: $lineHeightBase;
+
         }
     }
 }

@@ -6,7 +6,7 @@
 
     $document.ready(function() {
         gsap.registerPlugin(ScrollTrigger);
-
+        
         $document.on('click', '.burger', function (e) {
             $(this).toggleClass("is-active");
             $('.nav').toggleClass("is-active");
@@ -44,7 +44,7 @@
                 trigger: ".banner",
                 toggleActions: "play pause resume",
                 once: true,
-                start: "top 100%",
+                start: "10vh 100%",
                 end: 'bottom bottom',
                 scrub: 0,
             }

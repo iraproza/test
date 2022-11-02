@@ -1,5 +1,5 @@
 .banner {
-    height: 100vh;
+    height: 25vh;
     width: 100%;
     position: relative;
     transition: all 1s;
@@ -16,8 +16,8 @@
         h1 {
             margin: 0;
             text-align: center;
-            font-size: $fontSize150;
-            line-height: $lineHeight122;
+            line-height: 10.2778vw;
+            font-size: 11.1111vw;
         }
 
         span {
@@ -42,5 +42,16 @@
         z-index: -1;
         transform: rotate(-8deg);
         width: 18vw;
+    }
+
+    @media (min-width: $screen_min_768) {
+        height: 95vh;
+
+        &__title {
+            h1 {
+                font-size: $fontSize150;
+                line-height: $lineHeight122;
+            }
+        }
     }
 }

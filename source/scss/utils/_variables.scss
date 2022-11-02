@@ -34,14 +34,19 @@ $lineHeight122:         6.3542vw !default;
 
 //== Container template
 
-$container:                  81.2500vw !default;
+$container:                  95vw !default;
 $containerGutterWidth:       1.5625vw !default;
-
 
 //== Media queries breakpoints
 
 $screen_min_360:        360px !default;
-$screen_min_375:        375px !default;
 $screen_min_768:        768px !default;
 $screen_min_1080:       1080px !default;
 $screen_min_1920:       1920px !default;
+
+
+:root {
+    @media (min-width: $screen_min_1080) {
+        $container: 81.2500vw !default;
+    }
+}

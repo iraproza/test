@@ -1,11 +1,10 @@
 .quote {
     background-color: $brand04;
-    padding: 5.8vw 0 21.0417vw 0;
+    padding: 11.6vw 0 21.0417vw 0;
   
     .container {
         display: grid;
-        grid-template-columns: 15.6250vw 1fr;
-        grid-gap: 0 4.7396vw;
+        grid-gap: 30px;
     }
 
     &__author {
@@ -17,31 +16,31 @@
         z-index: 3;
 
         &-photo {
-            width: 15.6250vw;
-            height: 15.6250vw;
+            width: 30.6250vw;
+            height: 30.6250vw;
             margin-bottom: 1.1979vw;
         }
 
         h3 {
-            font-size: 1.4583vw;
-            line-height: 1.7708vw;
+            font-size: 5.4667vw;
+            line-height: 6vw;
             font-weight: 700;
             margin: 0;
-
         }
 
         span {
-            font-size: $fontSizeSmall;
-            line-height: $lineHeightSmall;
+            font-size: 4.8000vw;
+            line-height: 5vw;
         }
     }
 
     &__title {
         position: relative;
-        font-size: $fontSize60;
-        line-height: $fontSize60;
+        font-size: 5.4667vw;
+        line-height: 6vw;
         color: $brand02;
         margin: 0;
+        text-align: center;
         
         &::before {
             content: '';
@@ -56,7 +55,11 @@
     }
 
     &__text {
-        width: 45.6250vw;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
 
         blockquote {
             margin: 1.4063vw 0;
@@ -64,6 +67,8 @@
 
         p {
             padding-bottom: 2.500vw;
+            font-size: 4.4103vw;
+            line-height: 5.4103vw;
         }
 
         p:last-of-type {
@@ -73,12 +78,13 @@
 
     &__link {
         background-color: $brand02;
-        font-size: 1.0417vw;
-        min-height: 2.9167vw;
+        font-size: 4.0417vw;
+        line-height: 5vw;
+        min-height: 6vw;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 0 0.6771vw 0 1.1979vw;
+        padding: 3vw 4.6771vw 3vw 4.1979vw;
         color: $base;
         border-radius: 30px;
         font-weight: 500;
@@ -87,9 +93,6 @@
         &:hover,
         &:focus {
             background-color: $brand01;
-
-
-
         }
 
         span {
@@ -98,8 +101,68 @@
         }
 
         .icon-play {
-            width: 1.6667vw;
-            height: 1.6667vw;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media (min-width: $screen_min_768) {
+        &__author {
+            h3 {
+                font-size: 1.4583vw;
+                line-height: 1.7708vw;
+            }
+    
+            span {
+                font-size: $fontSizeSmall;
+                line-height: $lineHeightSmall;
+            }
+
+            &-photo {
+                width: 15.6250vw;
+                height: 15.6250vw;
+            }
+        }
+    
+        &__title {
+            font-size: $fontSize60;
+            line-height: $fontSize60;
+            text-align: left;
+        }
+
+        &__text {
+            p {
+                font-size: $fontSizeBase;
+                line-height: $lineHeightBase;
+            }
+        }
+
+        &__link {
+            font-size: 1.0417vw;
+            line-height: 1;
+            min-height: 1.9167vw;
+            padding: 0 0.6771vw 0 1.1979vw;
+
+            .icon-play {
+                width: 1.6667vw;
+                height: 1.6667vw;
+            }
+        }
+    }
+
+    @media (min-width: $screen_min_1080) {
+        padding: 5.8vw 0 21.0417vw 0;
+
+        .container {
+            grid-template-columns: 15.6250vw 1fr;
+            grid-gap: 0 4.7396vw;
+
+        }
+
+        &__text {
+            width: 45.6250vw;
+            display: block;
+            margin: 0;
         }
     }
 }

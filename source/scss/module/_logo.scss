@@ -1,10 +1,10 @@
 .logo {
     font-weight: 700;
-    font-size: $fontSizeLarge;
+    font-size: 4.9744vw;
     line-height: 1;
     position: relative;
     z-index: 3;
-    width: 20.8333vw;
+    // width: 30vw;
     
     &.white {
         color: $base;
@@ -12,5 +12,10 @@
 
     &.dark {
         color: $brand01;
+    }
+
+    @media (min-width: $screen_min_768) {
+        font-size: $fontSizeLarge;
+        width: 20.8333vw;
     }
 }
